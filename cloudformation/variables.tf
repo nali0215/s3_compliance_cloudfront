@@ -8,4 +8,4 @@ variable "project_name" {}
 variable "project_name1" {}
 
 variable "iamrole_name" {}
-variable "acctnumb" {}
+
