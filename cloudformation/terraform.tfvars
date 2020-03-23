@@ -1,5 +1,5 @@
 #----- Select the aws region
-aws_region   = "us-west-1"
+aws_region   = "us-east-1"
 
 # -----Select the project name for encryption stack
 project_name = "s3encryptingstack"

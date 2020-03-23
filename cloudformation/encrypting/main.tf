@@ -69,7 +69,7 @@ resource "aws_cloudformation_stack" "stack" {
                   "AutomationAssumeRole": {
                       "StaticValue": {
                           "Values": [
-                              "arn:aws:iam::${var.acctnumb}:role/${var.iamrole_name}"
+                              "${var.remediationARN}"
                           ]
                       }
                   },
