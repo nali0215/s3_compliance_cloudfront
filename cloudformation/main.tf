@@ -14,7 +14,6 @@ module "iam" {
 module "encrypting" {
   source       = "./encrypting"
   iamrole_name = "${var.iamrole_name}"
-  acctnumb     = "${var.acctnumb}"
   remediationARN = "${module.iam.iam_role_arn}"
 
 }
@@ -22,7 +21,6 @@ module "encrypting" {
 module "versioning" {
   source       = "./versioning"
   iamrole_name = "${var.iamrole_name}"
-  acctnumb     = "${var.acctnumb}"
   remediationARN = "${module.iam.iam_role_arn}"
 
 }
