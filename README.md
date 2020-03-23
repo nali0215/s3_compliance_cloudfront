@@ -4,4 +4,4 @@ Uses terraform to setup stacks on cloudformation and set up config.
 In the terraform.tfvars file must declare name, aws region, and account number.
 
 
-#Must run config recorder first to set up AWS Config recorder or else it will fail. If you already have config recorder running you can move on to main step. 
+# Must run config recorder first to set up AWS Config recorder or else it will fail. If you already have config recorder running you can move on to running main.tf from the cloudfront which will run iam, versioning, and encryption. 
