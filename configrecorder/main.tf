@@ -11,7 +11,7 @@ resource "aws_iam_role_policy_attachment" "attachment" {
 }
 
 resource "aws_s3_bucket" "configbucket" {
-  bucket = "awsconfignaveed"
+  bucket = "${var.bucket_name}"
 }
 
 resource "aws_config_delivery_channel" "configdelivery" {
